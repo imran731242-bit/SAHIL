@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuji Chats</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#050505;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    color:#00ff88;
+    font-size:28px;
+    font-weight:bold;
+    text-shadow:0 0 20px #00ff88;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:80vh;
+    flex-wrap:wrap;
+}
+
+.left{
+    flex:1;
+}
+
+.left h1{
+    font-size:70px;
+    color:#00ff88;
+    text-shadow:0 0 30px #00ff88;
+}
+
+.left p{
+    margin:20px 0;
+    color:#ccc;
+}
+
+button{
+    background:#00ff88;
+    border:none;
+    padding:15px 35px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    box-shadow:0 0 20px #00ff88;
+}
+
+.right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    width:300px;
+    background:#111;
+    border:2px solid #00ff88;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 0 30px rgba(0,255,136,.4);
+}
+
+.circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:6px solid #00ff88;
+    margin:auto;
+    box-shadow:0 0 30px #00ff88;
+}
+
+.features{
+    margin-top:20px;
+}
+
+.feature{
+    background:#181818;
+    margin:10px 0;
+    padding:12px;
+    border-radius:10px;
+    border-left:4px solid #00ff88;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<h2 class="logo">FUJI CHATS</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Features</a>
+<a href="#">About</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="left">
+<h1>FUJI CHATS</h1>
+
+<p>Experience futuristic communication with a powerful AI-driven platform.</p>
+
+<button>Get Started</button>
+</div>
+
+<div class="right">
+<div class="card">
+
+<div class="circle"></div>
+
+<div class="features">
+<div class="feature">Secure Chat</div>
+<div class="feature">AI Assistant</div>
+<div class="feature">Fast Messaging</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+</div>
+
+</body>
+</html>
