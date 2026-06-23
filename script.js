@@ -150,10 +150,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // --- 2. Advanced Jukebox Playlist System (Masoom Sharma Tracks) ---
 const playlist = [
-  { name: "2 Numbari", artist: "SAHIL !!", url: "songs/2numbari.mp3" },
-  { name: "Pistol", artist: "SAHIL !!", url: "songs/pistol.mp3" },
-  { name: "Bhai Tera Gunda", artist: "SAHIL !!", url: "songs/gunda.mp3" },
-  { name: "Kala Tikka", artist: "SAHIL !!", url: "songs/kalatikka.mp3" },
+  { name: "295 SIDHU MOOSEWALA", artist: "SAHIL !!", url: "songs/295.mp3" },
+  { name: "PISTOL", artist: "SAHIL !!", url: "songs/pistol.mp3" },
+  { name: "NOT LIKE YOU", artist: "SAHIL !!", url: "songs/you.mp3" },
+  { name: "DEVIL", artist: "SAHIL !!", url: "songs/devil.mp3" },
 ];
 
 let currentTrackIndex = 0;
