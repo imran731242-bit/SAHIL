@@ -9,9 +9,9 @@
 :root {
   --bg-deep: #050505;
   --primary-red: #FFD700;
-  --neon-glow: 0 0 25px #FFD700, 0 0 10px rgba(230, 28, 36, 0.6);
+  --neon-glow: 0 0 25px #FFD700, 0 0 10px rgba(255, 215, 0, 0.6);
   --panel-bg: rgba(13, 13, 13, 0.88);
-  --border-line: rgba(230, 28, 36, 0.4);
+  --border-line: rgba(255, 215, 0, 0.4);
   --text-gray: #a0a0a0;
 
   --loader-red: #FFD700;
@@ -204,8 +204,8 @@ body {
   height: 85%;
   max-width: 1300px;
   background: rgba(6, 2, 2, 0.96);
-  border: 1px solid rgba(230, 28, 36, 0.4);
-  box-shadow: 0 0 30px rgba(230, 28, 36, 0.3);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -215,7 +215,7 @@ body {
 .terminal-header-full {
   background: rgba(18, 5, 6, 0.98);
   padding: 18px 30px;
-  border-bottom: 2px solid rgba(230, 28, 36, 0.3);
+  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -271,7 +271,7 @@ body {
   width: 5px;
 }
 .terminal-body-full::-webkit-scrollbar-thumb {
-  background: rgba(230, 28, 36, 0.3);
+  background: rgba(255, 215, 0, 0.3);
 }
 .log-line {
   opacity: 0;
@@ -303,7 +303,7 @@ body {
 .loader-footer-full {
   padding: 25px 40px;
   background: rgba(14, 4, 5, 0.98);
-  border-top: 1px solid rgba(230, 28, 36, 0.3);
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
 }
 .progress-status-container {
   display: flex;
@@ -341,7 +341,7 @@ body {
   background: rgba(0, 0, 0, 0.8);
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid rgba(230, 28, 36, 0.3);
+  border: 1px solid rgba(255, 215, 0, 0.3);
 }
 .loader-progress-bar-full {
   height: 10px;
@@ -402,7 +402,7 @@ body {
 }
 .floating-particle {
   position: absolute;
-  background: rgba(230, 28, 36, 0.15);
+  background: rgba(255, 215, 0, 0.15);
   box-shadow: 0 0 8px var(--primary-red);
   border-radius: 50%;
   animation: floatUp linear infinite;
@@ -432,22 +432,14 @@ header {
   font-weight: 900;
   letter-spacing: 3px;
   text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(230, 28, 36, 0.3);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 .brand-logo span {
   color: #FFD700;
   text-shadow: 0 0 20px #FFD700;
 }
 .music-bar {
-  background: rgba(15, 15, 15, 0.88);
-  border: 1px solid var(--border-line);
-  box-shadow: 0 0 15px rgba(230, 28, 36, 0.15);
-  padding: 8px 22px;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.35);
 }
 .music-info {
   font-size: 0.8rem;
@@ -530,7 +522,7 @@ header {
   font-size: 1.3rem;
   letter-spacing: 4px;
   margin-bottom: 25px;
-  text-shadow: 0 0 10px rgba(230, 28, 36, 0.3);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 .left-panel .motto-box {
   border-left: 3px solid var(--primary-red);
@@ -540,7 +532,7 @@ header {
   font-style: italic;
   margin-bottom: 40px;
   max-width: 480px;
-  filter: drop-shadow(0 0 8px rgba(230, 28, 36, 0.2));
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.2));
 }
 .action-cluster {
   display: flex;
@@ -576,10 +568,10 @@ header {
   background: transparent;
   color: white;
   border: 1px solid var(--primary-red);
-  box-shadow: inset 0 0 10px rgba(230, 28, 36, 0.2);
+  box-shadow: inset 0 0 10px rgba(255, 215, 0, 0.2);
 }
 .btn-border:hover {
-  background: rgba(230, 28, 36, 0.1);
+  background: rgba(255, 215, 0, 0.1);
   box-shadow: 0 0 15px var(--primary-red);
 }
 
@@ -588,14 +580,8 @@ header {
   justify-content: flex-end;
 }
 .profile-container {
-  background: var(--panel-bg);
-  border: 1px solid var(--border-line);
-  box-shadow: 0 0 30px rgba(230, 28, 36, 0.2);
-  backdrop-filter: blur(25px);
-  width: 100%;
-  max-width: 380px;
-  border-radius: 14px;
-  padding: 30px;
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.35);
 }
 .speech-header {
   text-align: center;
@@ -650,7 +636,7 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
-  text-shadow: 0 0 8px rgba(230, 28, 36, 0.4);
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
 }
 .user-tag {
   color: var(--text-gray);
@@ -663,18 +649,12 @@ header {
   margin: 20px 0;
 }
 .badge-node {
-  background: rgba(230, 28, 36, 0.15);
-  border: 1px solid var(--primary-red);
-  box-shadow: 0 0 8px rgba(230, 28, 36, 0.3);
-  padding: 5px 12px;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #ffffff;
+  background: rgba(255, 215, 0, 0.12);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.35);
 }
 .separator {
   height: 1px;
-  background: rgba(230, 28, 36, 0.2);
+  background: rgba(255, 215, 0, 0.2);
   width: 100%;
   margin: 20px 0;
 }
@@ -684,7 +664,7 @@ header {
 }
 .meta-details h3 {
   color: var(--primary-red);
-  text-shadow: 0 0 5px rgba(230, 28, 36, 0.4);
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
   font-size: 0.75rem;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -722,13 +702,7 @@ header {
 }
 
 .metric-footer {
-  border-top: 1px solid rgba(230, 28, 36, 0.2);
-  background: rgba(3, 3, 3, 0.95);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 25px 6%;
-  text-align: center;
-  z-index: 10;
+  border-top: 1px solid rgba(255, 215, 0, 0.25);
 }
 .metric-node {
   position: relative;
@@ -740,14 +714,14 @@ header {
   top: 25%;
   height: 50%;
   width: 1px;
-  background: rgba(230, 28, 36, 0.2);
+  background: rgba(255, 215, 0, 0.2);
 }
 .metric-val {
   font-family: "Orbitron", sans-serif;
   font-size: 1.8rem;
   font-weight: 900;
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(230, 28, 36, 0.2);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
 }
 .metric-lbl {
   font-size: 0.8rem;
