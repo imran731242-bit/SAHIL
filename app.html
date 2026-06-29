@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TITAN EXE - Discord Bot Panel</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0d1117;
+color:white;
+}
+
+header{
+background:#161b22;
+padding:20px;
+text-align:center;
+font-size:30px;
+font-weight:bold;
+color:#FFD700;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#161b22;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 0 15px rgba(255,215,0,.2);
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin-top:10px;
+background:#0d1117;
+color:white;
+border:1px solid #FFD700;
+border-radius:8px;
+}
+
+button{
+margin-top:15px;
+padding:12px;
+width:100%;
+background:#FFD700;
+color:black;
+font-weight:bold;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ffcc00;
+}
+
+.status{
+color:#00ff88;
+font-weight:bold;
+}
+
+.logs{
+background:black;
+padding:15px;
+height:200px;
+overflow:auto;
+border-radius:10px;
+font-family:monospace;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+⚡ TITAN EXE DISCORD BOT PANEL ⚡
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Bot Status</h2>
+
+<p>Status:
+<span class="status" id="status">
+Offline
+</span>
+</p>
+
+<button onclick="startBot()">
+Start Bot
+</button>
+
+<button onclick="stopBot()">
+Stop Bot
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Configuration</h2>
+
+<input id="token" placeholder="Discord Bot Token">
+
+<input id="guild" placeholder="Guild ID">
+
+<input id="channel" placeholder="Channel ID">
+
+<button onclick="saveConfig()">
+Save Configuration
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Logs</h2>
+
+<div class="logs" id="logs">
+Waiting...
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function log(msg){
+document.getElementById("logs").innerHTML+=
+"<br>"+msg;
+}
+
+function startBot(){
+
+document.getElementById("status").innerHTML="Online";
+
+log("Bot Started");
+
+}
+
+function stopBot(){
+
+document.getElementById("status").innerHTML="Offline";
+
+log("Bot Stopped");
+
+}
+
+function saveConfig(){
+
+log("Configuration Saved");
+
+alert("Saved");
+
+}
+
+</script>
+
+</body>
+</html>
